@@ -15,17 +15,14 @@ body {
 	background-size: 400px, 200px;
 	background-attachment: fixed;
 	animation: movingBackground 20s linear infinite;
-	
-	
 }
 
 @keyframes movingBackground {
 	from {background-position: 0 0;}
-	to {background-position: 400px 200px;}
+	to {background-position: 400px -200px;}
 
 }
-		
-/* Container styles */
+
 .scrolling-text-container {
     background-image: url("https://tresletter.com/ipassets/tcom_scrollbar1.png");
     overflow: hidden;
@@ -33,7 +30,6 @@ body {
 	height: 71px;
 }
 
-/* Inner container styles */
 .scrolling-text-inner {
     display: flex;
     white-space: nowrap;
@@ -43,7 +39,6 @@ body {
 	padding: 8px 0;
 }
 
-/* Text styles */
 .scrolling-text {
     display: flex;
 }
@@ -52,12 +47,10 @@ body {
     padding: 0 800px;
 }
 
-/* Apply the animation to the text items */
 .scrolling-text-inner>div {
     animation: var(--direction) var(--marquee-speed) linear infinite;
 }
 
-/* Setting the Animation using Keyframes */
 @keyframes scroll-left {
     0% {
         transform: translateX(0%);
