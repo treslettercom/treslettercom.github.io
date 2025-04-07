@@ -1,0 +1,233 @@
+<head>
+	<title>〢⌇ Tresletter ⌇〣</title>
+  <!-- this code is held together by duct tape, prayers, and w3schools -->
+  
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+	<style>
+		
+body {
+	font-family: "Jost", sans-serif;
+	background-image: url("https://tresletter.com/ipassets/ditherbg1.jpg");
+	background-size: 400px, 200px;
+	background-attachment: fixed;
+	animation: movingBackground 20s linear infinite;
+}
+
+@keyframes movingBackground {
+	from {background-position: 0 0;}
+	to {background-position: 400px -200px;}
+
+}
+
+.scrolling-text-container {
+    background-image: url("https://tresletter.com/ipassets/tcom_scrollbar1.png");
+    overflow: hidden;
+	width: 800px;
+	height: 71px;
+}
+
+.scrolling-text-inner {
+    display: flex;
+    white-space: nowrap;
+    font-size: 36px;
+    font-weight: 0;
+	font-style: italic;
+	padding: 8px 0;
+}
+
+.scrolling-text {
+    display: flex;
+}
+
+.scrolling-text-item {
+    padding: 0 800px;
+}
+
+.scrolling-text-inner>div {
+    animation: var(--direction) var(--marquee-speed) linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+	
+.booyacontainer {
+  width: 800px;
+  height: 540px;
+  margin: auto;
+}
+
+.booyaleft {
+  width: 130px;
+  height: 533px;
+  float: left;
+  background-image: url("https://tresletter.com/ipassets/tcom_socialbg.png");
+  background-size: 130px 540px;
+  font-size: 0px;
+  padding-top: 7px;
+
+}
+
+.booyaright {
+	width: 670px;
+	height: 520px;
+	float: right;
+	background-image: url("https://tresletter.com/ipassets/tcom_postbgper1.png");
+	background-size: 670px 540px;
+	
+	font-size: 42px;
+	font-weight: 700;
+	padding-top: 20px;
+	text-align: center;
+}
+	
+.footer {
+	width: 800px;
+	height: 40px;
+	background-image: url("https://tresletter.com/ipassets/tcom_footer.png");
+	background-size: 800px 48px;
+	font-size: 18px;
+	font-weight: 0;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#stargreen {
+  position: relative;
+  right: 419px;
+  bottom: 230px;
+  background-image: url("https://tresletter.com/ipassets/ipstar_doodleg.gif");
+  background-size: 141px 131px;
+  font-size: 0px;
+  width: 141px;
+  height: 131px;
+  z-index: -1;
+}
+
+#starbrown {
+  position: relative;
+  left: 420px;
+  top: 162px;
+  background-image: url("https://tresletter.com/ipassets/ipstar_doodleb.gif");
+  background-size: 199px 193px;
+  font-size: 0px;
+  width: 199px;
+  height: 193px;
+  z-index: -2;
+}
+
+#normaltext {
+  font-size: 32px;
+  font-weight: 500;
+  padding-top: 20px;
+  text-align: center;
+}
+
+	
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 9s linear infinite;
+}
+
+@-webkit-keyframes rotating2 {
+    from{
+        -webkit-transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+.rotating2 {
+    -webkit-animation: rotating 16s linear infinite;
+}
+		
+	</style>
+</head>
+
+
+<body>
+	<center><img src="https://tresletter.com/ipassets/tcom_header2.png" width="800"></center>
+	<center><img src="https://tresletter.com/ipassets/tcom_reed1.jpg" width="800"></center>
+	
+	<center><div class="scrolling-text-container">
+		<div class="scrolling-text-inner" style="--marquee-speed: 22s; --direction:scroll-left" role="marquee">
+			<div class="scrolling-text">
+            <div class="scrolling-text-item">Introducing the `` Outpost Fest `` era!</div>
+			<div class="scrolling-text-item">The lead single `` Puddlejumper `` releases May 23!</div>
+            <!-- Add More Items Here -->
+			</div>
+		</div>
+	</div></center>
+	
+	<center><img src="https://tresletter.com/ipassets/tcom_reed2.jpg" width="800"></center>
+	
+	<center><div class="booyacontainer">
+		<div class="booyaleft">
+			<a href="https://letter.bandcamp.com/">
+				<img src="https://tresletter.com/ipassets/tcomb_bandcamp(1).png" alt="Bandcamp" width="105" height="105">
+			</a>
+			<a href="https://ravenation.club/@letter">
+				<img src="https://tresletter.com/ipassets/tcomb_mastodon(1).png" alt="Mastodon" width="105" height="105">
+			</a>
+			<a href="https://bsky.app/profile/tresletter.com">
+				<img src="https://tresletter.com/ipassets/tcomb_bluesky(1).png" alt="Bluesky" width="105" height="105">
+			</a>
+			<a href="https://discord.gg/uBU2zfKdbJ">
+				<img src="https://tresletter.com/ipassets/tcomb_discord(1).png" alt="Discord" width="105" height="105">
+			</a>
+			<a href="https://tresletter.newgrounds.com/">
+				<img src="https://tresletter.com/ipassets/tcomb_newgrounds(1).png" alt="Newgrounds" width="105" height="105">
+			</a>
+			
+		</div>	
+		<div class="booyaright">
+			New single `` Puddlejumper ``
+			<br>
+			<img src="https://tresletter.com/ipassets/blankspace.png" alt="">
+			<br>
+			<iframe width="500" height="255" src="https://www.youtube-nocookie.com/embed/BadqSL8EC0U?si=b34NEEyhIFAxOIEN" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<div id="normaltext">Listen on all platforms May 23</div>
+			<img src="https://tresletter.com/ipassets/blankspace.png" alt="">
+			<br>
+			<a href="https://letter.bandcamp.com/track/puddlejumper"><img src="https://tresletter.com/ipassets/tcomb_bandcamp(1).png" alt="Bandcamp Single" width="105" height="105"></a>
+			<a href="https://youtube.com/@Tresletter"><img src="https://tresletter.com/ipassets/tcomb_youtube(1).png" alt="YouTube" width="105" height="105"></a>
+			<a href="https://open.spotify.com/artist/4zDPASXMvzax86wkfIt9RF"><img src="https://tresletter.com/ipassets/tcomb_spotify(1).png" alt="Spotify" width="105" height="105"></a>
+			<a href="https://music.apple.com/us/artist/tresletter/1688313551"><img src="https://tresletter.com/ipassets/tcomb_itunes(1).png" alt="Apple Music" width="105" height="105"></a>
+			<a href="https://music.amazon.com/artists/B0C5HQC28M/tresletter"><img src="https://tresletter.com/ipassets/tcomb_amazonmusic(1).png" alt="Amazon Music" width="105" height="105"></a>
+		</div>
+		
+		<div id="stargreen" class="rotating">GREENSTAR</div>
+		<div id="starbrown" class="rotating2">BROWNSTAR</div>
+	</div></center>
+	
+	<center><div class="footer">⫽ © Tresletter 2023—2025 ⫽ guided by reeds swaying in the wind ⫽</div></center>
+	
+</body>
